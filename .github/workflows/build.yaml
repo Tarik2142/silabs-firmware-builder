@@ -43,7 +43,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          tags: ghcr.io/${{ github.repository }}:${{ env.sdk_version }}
+          tags: "ghcr.io/tarik2142/silabs-firmware-builder:4.4.1"
           cache-from: ghcr.io/${{ github.repository }}:cache-${{ env.sdk_version }}
           cache-to: ghcr.io/${{ github.repository }}:cache-${{ env.sdk_version }}
           push: true
