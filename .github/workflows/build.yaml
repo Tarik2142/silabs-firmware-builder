@@ -44,8 +44,8 @@ jobs:
           context: .
           file: Dockerfile
           tags: "ghcr.io/tarik2142/silabs-firmware-builder:4.4.1"
-          cache-from: ghcr.io/${{ github.repository }}:cache-${{ env.sdk_version }}
-          cache-to: ghcr.io/${{ github.repository }}:cache-${{ env.sdk_version }}
+          cache-from: ghcr.io/tarik2142/silabs-firmware-builder:cache-${{ env.sdk_version }}
+          cache-to: ghcr.io/tarik2142/silabs-firmware-builder:cache-${{ env.sdk_version }}
           push: true
           build-args:
             "GECKO_SDK_VERSION=v${{ env.sdk_version }}"
